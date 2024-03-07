@@ -1,0 +1,67 @@
+Névkiosztás:
+
+router => R1
+swich => SW1
+swich2 => SW2
+
+Összekötés:
+
+R1-SW1
+
+
+SW1 (Fasteternet 1)-PC1
+SW1 (Fasteternet 2)-PC2
+SW1 (Fasteternet 3)-PC3
+SW1 (Fasteternet 4)-PC4
+SW1 (Fasteternet 5)-PC5
+SW1 (Fasteternet 6)-PC6
+SW1 (Fasteternet 7)-PC7
+SW1 (Fasteternet 8)-PC8
+SW1 (Fasteternet 9)-PC9
+SW1 (Fasteternet 10)-PC10
+
+R1-SW2
+
+SW2 (Fasteternet 1)-PC11
+SW2 (Fasteternet 2)-PC12
+SW2 (Fasteternet 3)-PC13
+SW2 (Fasteternet 4)-PC14
+SW2 (Fasteternet 5)-PC15
+SW2 (Fasteternet 6)-PC16
+
+Jelszavak:
+
+Router ena jelszó: enapass
+Router ena secret enasecret
+
+DHCP:
+
+neve : LAN
+ip: 10.0.0.0 /8 -> 2 részre -> második része
+dns-server : 8.8.8.8
+domain-name : mechwart.eu
+default-router : 10.128.0.1
+ki kell zárni az első két címet
+
+
+neve : LAN2
+ip: 10.0.0.0 /8 -> 1 részre -> első része
+dns-server : 8.8.8.8
+domain-name : mechwart.eu
+default-router : 10.0.0.1
+ki kell zárni az első két címet
+
+
+Vezeték nélküli router:
+ip : 10.20.30.1 /24
+max felhasználó : 100
+a második ip címtől ossza ki a címeket
+dns : 8.8.8.8
+
+csatlakoztassa a laptopokat a vezeték nélküli routerhez
+
+
+
+
+
+
